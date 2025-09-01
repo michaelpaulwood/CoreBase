@@ -16,7 +16,7 @@ export default function Footer() {
             <div className="flex items-center text-sm text-gray-500">
               <span>Built by</span>
               <Link 
-                href="https://github.com/michaellopatin" 
+                href="https://github.com/michaelpaulwood" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="ml-1 font-medium text-blue-600 hover:text-blue-700"

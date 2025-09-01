@@ -26,7 +26,7 @@ Built for developers who want to ship fast without the setup headaches. Get from
 
 1. **Clone and install**
 ```bash
-git clone <repository-url> my-new-app
+git clone https://github.com/michaelpaulwood/foundationjs.git my-new-app
 cd my-new-app
 npm install
 ```
@@ -230,7 +230,7 @@ MIT License - feel free to use this for personal and commercial projects.
 
 ## 👨‍💻 Credits
 
-Built by [Michael Wood](https://github.com/michaellopatin) with [Claude Code](https://claude.ai/code)
+Built by [Michael Wood](https://github.com/michaelpaulwood) with [Claude Code](https://claude.ai/code)
 
 ---
 
