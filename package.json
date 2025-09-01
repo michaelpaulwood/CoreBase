@@ -1,7 +1,14 @@
 {
   "name": "foundationjs",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "Production-ready Next.js 14 boilerplate with Firebase integration, comprehensive error handling, and component library",
   "private": true,
+  "keywords": ["nextjs", "firebase", "typescript", "tailwind", "boilerplate", "react", "authentication"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michaelpaulwood/foundationjs.git"
+  },
+  "author": "Michael Wood",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
