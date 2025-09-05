@@ -14,6 +14,24 @@ export default function Home() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const handleViewDemo = () => {
+    // Scroll to benefits section first to show what CoreBase offers
+    document.getElementById('benefits')?.scrollIntoView({ behavior: 'smooth' });
+    // After a delay, show a helpful message about trying the demo
+    setTimeout(() => {
+      const tryDemo = confirm(
+        "CoreBase Demo:\n\n" +
+        "The best way to see CoreBase in action is to try the authentication system!\n\n" +
+        "• Click 'OK' to try signing up/logging in\n" +
+        "• Click 'Cancel' to continue browsing features\n\n" +
+        "You can create a real account or just explore the forms."
+      );
+      if (tryDemo) {
+        window.location.href = '/auth';
+      }
+    }, 1000);
+  };
+
   return (
     <main className="min-h-screen bg-core-gradient">
       {/* Navigation */}
@@ -74,8 +92,8 @@ export default function Home() {
                     Start Building Now →
                   </CoreButton>
                 </Link>
-                <CoreButton variant="outline" size="xl" className="w-full sm:w-auto">
-                  View Demo
+                <CoreButton variant="outline" size="xl" className="w-full sm:w-auto" onClick={handleViewDemo}>
+                  View Demo →
                 </CoreButton>
               </div>
             </div>
