@@ -1,4 +1,4 @@
-# FoundationJS - Docker Configuration
+# CoreBase - Docker Configuration
 # Uncomment and customize as needed for your deployment
 
 # # Use official Node.js runtime as base image
@@ -56,7 +56,7 @@
 # # Docker Compose Example (save as docker-compose.yml)
 # # version: '3.8'
 # # services:
-# #   foundationjs:
+# #   corebase:
 # #     build: .
 # #     ports:
 # #       - "3000:3000"

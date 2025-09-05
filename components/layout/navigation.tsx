@@ -39,7 +39,7 @@ export default function Navigation({ user, onLogout }: NavigationProps) {
               href="/" 
               className="text-xl font-bold text-blue-600 hover:text-blue-700 transition-colors"
             >
-              FoundationJS
+              CoreBase
             </Link>
           </div>
 

@@ -1,4 +1,4 @@
-// FoundationJS Component Library
+// CoreBase Component Library
 // Export all reusable components from a single entry point
 
 // UI Components
@@ -19,7 +19,7 @@ export type {
 
 // Component library metadata
 export const COMPONENT_LIBRARY_VERSION = '1.0.0';
-export const COMPONENT_LIBRARY_NAME = 'FoundationJS UI';
+export const COMPONENT_LIBRARY_NAME = 'CoreBase UI';
 
 // Usage example:
 // import { Button, Input, Loading, useToast } from '@/components';

@@ -1,4 +1,4 @@
-# FoundationJS Component Library
+# CoreBase Component Library
 
 A collection of reusable React components built with TypeScript and Tailwind CSS.
 

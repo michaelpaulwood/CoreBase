@@ -1,4 +1,4 @@
-# FoundationJS
+# CoreBase
 
 **A clean, production-ready Next.js 14 boilerplate with Firebase integration**
 
@@ -26,7 +26,7 @@ Built for developers who want to ship fast without the setup headaches. Get from
 
 1. **Clone and install**
 ```bash
-git clone https://github.com/michaelpaulwood/foundationjs.git my-new-app
+git clone https://github.com/michaelpaulwood/CoreBase.git my-new-app
 cd my-new-app
 npm install
 ```
@@ -99,7 +99,7 @@ NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
 ## 🏗️ Project Structure
 
 ```
-foundationjs/
+CoreBase/
 ├── src/app/                    # Next.js App Router
 │   ├── (auth)/auth/           # Authentication pages
 │   ├── dashboard/             # Protected dashboard
@@ -228,9 +228,18 @@ This app works on any platform that supports Next.js:
 
 MIT License - feel free to use this for personal and commercial projects.
 
-## 👨‍💻 Credits
+## 🛠️ Development Tools
 
-Built by [Michael Wood](https://github.com/michaelpaulwood) with [Claude Code](https://claude.ai/code)
+This project was built using a combination of modern development tools:
+
+- **[Claude Code](https://claude.ai/code)** - AI-powered coding assistant for rapid development
+- **[Claude](https://claude.ai)** - AI assistance for planning and architecture decisions  
+- **[Cursor](https://cursor.sh/)** - AI-enhanced code editor
+- **[GitHub Copilot](https://github.com/features/copilot)** - AI pair programming
+
+## 👨‍💻 Author
+
+Built by [Michael Wood](https://github.com/michaelpaulwood)
 
 ---
 
