@@ -34,6 +34,14 @@ Built for developers who want to ship fast with beautiful, consistent design. Ge
 
 ## 🚀 Quick Start
 
+### Prerequisites
+- **Node.js** 18.0 or higher ([Download](https://nodejs.org/))
+- **npm** or **yarn** package manager
+- **Git** for version control
+- **Firebase account** for backend services
+
+### Installation
+
 1. **Clone and install**
 ```bash
 git clone https://github.com/michaelpaulwood/CoreBase.git my-new-app
@@ -191,8 +199,109 @@ CoreBase/
 npm run dev          # Start development server
 npm run build        # Build for production
 npm run start        # Start production server
-npm run lint         # Run ESLint
+npm run lint         # Run ESLint and fix issues
+npm run type-check   # Run TypeScript type checking
 ```
+
+## 🛠️ Local Development Guide
+
+### Development Workflow
+
+1. **Start development server**
+```bash
+npm run dev
+# Server runs on http://localhost:3000
+# Hot reload enabled for instant changes
+```
+
+2. **Environment setup**
+```bash
+# Ensure .env.local exists with Firebase config
+# Check .env.example for required variables
+```
+
+3. **Code quality checks**
+```bash
+npm run lint         # Check for linting errors
+npm run type-check   # Verify TypeScript types
+npm run build        # Test production build
+```
+
+### Common Development Tasks
+
+#### Adding New Components
+```bash
+# Create component in components/ui/
+# Export from components/index.ts
+# Import and use: import { NewComponent } from '@/components'
+```
+
+#### Database Development
+- Use Firebase Console for database management
+- Check `lib/db.ts` for Firestore helpers
+- User data automatically synced on authentication
+
+#### Styling Changes
+- Modify `tailwind.config.ts` for design system changes
+- Use existing design tokens in `components/ui/design-system.tsx`
+- Global styles in `src/app/globals.css`
+
+### Troubleshooting
+
+#### Common Issues
+
+**Port already in use:**
+```bash
+# Kill process on port 3000
+npx kill-port 3000
+# Or use different port
+npm run dev -- -p 3001
+```
+
+**Firebase configuration errors:**
+- Verify all environment variables in `.env.local`
+- Check Firebase Console settings match your config
+- Ensure Firestore database is created and rules are set
+
+**Build errors:**
+```bash
+# Clear Next.js cache
+rm -rf .next
+npm run build
+```
+
+**TypeScript errors:**
+```bash
+# Run type checking
+npm run type-check
+# Check for missing type definitions
+```
+
+#### Development Tips
+
+1. **Hot Reload**: Changes to components update instantly
+2. **Error Overlay**: Next.js shows detailed error information
+3. **Console Logs**: Check browser console for Firebase connection status
+4. **Network Tab**: Monitor API calls to Firebase services
+
+### Testing
+
+Currently no automated tests are configured. To add testing:
+
+```bash
+# Install testing dependencies
+npm install --save-dev jest @testing-library/react @testing-library/jest-dom
+
+# Add test scripts to package.json
+# Create __tests__ directories for components
+```
+
+### Performance Optimization
+
+- Images automatically optimized by Next.js Image component
+- Tailwind CSS purges unused styles in production
+- Firebase SDK tree-shaking reduces bundle size
+- Server Components used where possible for better performance
 
 ## 🚀 Deployment
 
